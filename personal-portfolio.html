@@ -1,0 +1,210 @@
+<code>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #222;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: white;
+    }
+
+    header img {
+      width: 180px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    .projects {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 250px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .social-links a {
+      margin-right: 15px;
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="https://via.placeholder.com/180" alt="Profile picture">
+
+    <h1>John Doe</h1>
+
+    <p>Web Developer | Designer | Lifelong Learner</p>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+
+      <p>
+        Hello! I'm a passionate web developer who enjoys creating clean,
+        responsive, and user-friendly websites. I enjoy learning new
+        technologies and building projects that solve real-world problems.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="projects">
+
+        <article class="card">
+          <img src="https://via.placeholder.com/300x180" alt="Project 1">
+
+          <h3>Portfolio Website</h3>
+
+          <p>
+            A responsive portfolio showcasing my work and skills.
+          </p>
+
+          <a href="#">View Project</a>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/300x180" alt="Project 2">
+
+          <h3>Weather App</h3>
+
+          <p>
+            A weather application using an online API.
+          </p>
+
+          <a href="#">View Project</a>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/300x180" alt="Project 3">
+
+          <h3>Task Manager</h3>
+
+          <p>
+            A simple productivity app for organizing daily tasks.
+          </p>
+
+          <a href="#">View Project</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p>Email: johndoe@example.com</p>
+
+      <div class="social-links">
+        <a href="https://github.com/" target="_blank">GitHub</a>
+
+        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 John Doe. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+</code>
