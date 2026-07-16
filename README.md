@@ -22,11 +22,11 @@ There are 10 on the list(a good order to complete them):
 
 ### Personal Portfolio
 
-Code: `Pesonal Portfolio.html.zip` 
+`Webpage`: https://chloejadepavo8716.github.io/PersonalPortfolio/
 
 <div>
   
-Documentation: 
+`Documentation`: 
 
 </div>
 
