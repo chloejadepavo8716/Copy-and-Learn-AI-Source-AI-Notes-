@@ -24,6 +24,8 @@ There are 10 on the list(a good order to complete them):
 
 `Webpage`: https://chloejadepavo8716.github.io/PersonalPortfolio/
 
+`Sourcecode`:https://github.com/chloejadepavo8716/Copy-and-Learn-AI-Source-AI-Notes-/blob/main/personal-portfolio.html
+
 <div>
   
 `Documentation`: 
