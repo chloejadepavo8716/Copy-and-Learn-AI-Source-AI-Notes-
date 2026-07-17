@@ -1,798 +1,244 @@
 # Personal Portfolio Documentation
 
+> This README is a GitHub-ready version of the documentation.
+
 ## What is a Personal Portfolio?
 
-Imagine you have a giant scrapbook that tells people:
+A **personal portfolio** is a website that introduces you, showcases
+your work, and provides ways for people to contact you.
 
-> "Hi! This is who I am. These are the things I've made. Here's how you can talk to me."
+Typical information includes:
 
+-   Your name
+-   A short introduction
+-   Your skills
+-   Your projects
+-   Contact information
+-   Links to social media or professional profiles
 
+------------------------------------------------------------------------
 
-A portfolio website is exactly that, except it's on the internet.
+# Overall Structure
 
-
----
-
-## Overall Structure
-
-<pre>
+``` text
 Website
 │
 ├── Head (Information for the browser)
 │
 └── Body (Everything people can see)
-    │
     ├── Navigation Bar
     ├── Header
     ├── Main
     │   ├── About
     │   ├── Projects
     │   └── Contact
-    │
     └── Footer
-</pre>
+```
 
-Think of it like building a LEGO house.
+## `<!DOCTYPE html>`
 
-The **body** is the whole house.
+``` html
+<!DOCTYPE html>
+```
 
-Inside it are different rooms.
+Declares that the document uses the HTML5 standard.
 
+## `<html lang="en">`
 
----
+The root element of every HTML document. The `lang` attribute specifies
+the document language.
 
-# 1. DOCTYPE
+## `<head>`
 
+Contains metadata such as the title, character encoding, viewport
+settings, CSS, and JavaScript.
 
-`<!DOCTYPE html>`
-
-
-#### Explanation
-
-Imagine telling someone,
-
-> "Today we're building with LEGO."
-
-
-Before building, everyone knows what rules to follow.
-
-<!DOCTYPE html> tells the browser,
-
-> "This is an HTML5 webpage."
-
-
-
-It isn't something people see.
-
-
----
-
-# 2. html Element
-
-`<html lang="en">`
-
-Everything goes inside this tag.
-
-Think of it as a giant backpack.
-
-Everything the website owns goes inside this backpack.
-
-`lang="en`
-
-This tells the browser:
-
-> "The language is English."
-
-
-
-It helps:
-
-- Search engines
-- Screen readers
-- Translators
-
-
-
----
-
-# 3. Head Element
-
+``` html
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+</head>
+```
 
-The head is like your brain.
+## `<meta charset="UTF-8">`
 
-People cannot see your brain.
+Defines the character encoding used by the webpage.
 
-But it controls important information.
+## Viewport
 
-**Inside:**
+``` html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
 
-<pre>
-  
-<code>&lt;head&gt<code>
+Allows the webpage to scale correctly on different screen sizes.
 
-Title
-Meta information
-CSS
-JavaScript
+## `<title>`
 
-<code>&lt/head&gt</code>
-</pre>
+Sets the title shown in the browser tab.
 
----
+## `<style>`
 
-# 4. Meta Charset
+Contains CSS rules used to style the webpage.
 
+## Universal Selector
 
-`<meta charset="UTF-8">`
-
-Imagine you have hundreds of letters.
-
-<pre>
-A
-B
-C
-あ
-한
-ñ
-€
-</pre>  
-
-The browser needs to know how to read them.
-
-UTF-8 is like saying
-
-> "Use the world's biggest alphabet."
-
-
-
-Without it, text may become:
-
-<pre>
-â€™
-Ã©
-????
-</pre>
-
-
----
-
-# 5. Viewport
-
-`<meta name="viewport" content="width=device-width, initial-scale=1.0">`
-
-Phones are tiny.
-
-Computers are big.
-
-This line tells the browser:
-
-> "Fit the webpage to whatever screen is being used."
-
-
-
-Without it,
-
-your website could look tiny on phones.
-
-
----
-
-### 6. Title
-
-<title>Personal Portfolio</title>
-
-This becomes
-
-Chrome Tab
-
-Personal Portfolio
-
-Not inside the webpage.
-
-Only on the browser tab.
-
-
----
-
-### 7. Style
-
-<style>
-...
-</style>
-
-HTML builds the house.
-
-CSS paints the house.
-
-Without CSS:
-
-Black text
-White background
-Very boring
-
-With CSS:
-
-Colors
-Spacing
-Rounded corners
-Animations
-Layouts
-
-
----
-
-### 8. Universal Selector
-
+``` css
 *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+```
 
-The * means
+Applies styles to every element.
 
-> "EVERYTHING."
+## Margin
 
+Space outside an element.
 
+## Padding
 
-Example:
+Space inside an element.
 
-Imagine a teacher saying,
+## Box Sizing
 
-> "Everyone sit down."
-
-
-
-Not just one student.
-
-Every student.
-
-That's what * does.
-
-
----
-
-### 9. Margin
-
-margin:0;
-
-Margin is outside space.
-
-Imagine two books.
-
-Book      Book
-
-The empty space between them
-
-is margin.
-
-
----
-
-### 10. Padding
-
-padding:0;
-
-Padding is inside space.
-
-Imagine a gift box.
-
-+---------+
-|         |
-| Present |
-|         |
-+---------+
-
-The empty area around the present
-
-is padding.
-
-
----
-
-### 11. Box-sizing
-
+``` css
 box-sizing:border-box;
+```
 
-Imagine a pizza box.
+Makes width and height include padding and borders.
 
-You order a 12-inch box.
+## Font Family
 
-You expect the ENTIRE box to be 12 inches.
+Specifies preferred fonts.
 
-Without border-box
+## Body
 
-adding padding makes it bigger.
+Styles the entire webpage.
 
-With it,
+## Background Color
 
-the total size always stays the same.
+Sets the background color.
 
+## Text Color
 
----
+Sets the text color.
 
-### 12. Font Family
+## Line Height
 
-font-family: Arial, Helvetica, sans-serif;
+Controls spacing between lines.
 
-Fonts are handwriting styles.
+## `<nav>`
 
-Like:
+Defines the website navigation.
 
-Comic
-Neat
-Fancy
-Professional
+## `<ul>` and `<li>`
 
-The browser tries:
+Create unordered lists and list items.
 
-1. Arial
+## `<a>`
 
+Creates hyperlinks.
 
-2. Helvetica
+-   Internal: `href="#about"`
+-   External: `href="https://github.com"`
 
+## `<header>`
 
-3. Any sans-serif font
+Contains introductory content.
 
+## `<img>`
 
+Displays an image.
 
+-   `src` --- image location
+-   `alt` --- alternative text
 
----
+## `<h1>`
 
-### 13. Body
+Primary page heading.
 
-body{
+## `<p>`
 
-This styles the whole webpage.
+Paragraph element.
 
-Think of it as painting the walls of an entire house.
+## `<main>`
 
+Contains the primary content.
 
----
+## `<section>`
 
-14. Background Color
+Groups related content.
 
-background-color:#f4f4f4;
+## `id`
 
-This paints the webpage.
+Unique identifier for an element.
 
-Like painting your bedroom walls.
+## `<article>`
 
+Represents self-contained content.
 
----
+## `<div>`
 
-### 15. Color
+Generic container for grouping elements.
 
-color:#333;
+## `class`
 
-Changes text color.
+Reusable identifier shared by multiple elements.
 
+## Flexbox
 
----
-
-### 16. Line Height
-
-line-height:1.6;
-
-Imagine writing in a notebook.
-
-Hello
-World
-
-Now imagine
-
-Hello
-
-
-World
-
-More breathing room.
-
-That's line height.
-
-
----
-
-Navigation
-
-<nav>
-
-This is the website's map.
-
-Like signs in a mall.
-
-Food Court →
-
-Cinema →
-
-Exit →
-
-Users can jump anywhere.
-
-
----
-
-Unordered List
-
-<ul>
-
-Creates a list.
-
-•
-•
-•
-
-
----
-
-List Item
-
-<li>
-
-Each bullet is one item.
-
-Home
-About
-Projects
-
-
----
-
-Anchor
-
-<a href="#about">
-
-Anchor means
-
-> "Go somewhere."
-
-
-
-
----
-
-If it's
-
-href="#about"
-
-Go to
-
-<section id="about">
-
-inside the same page.
-
-
----
-
-If it's
-
-href="https://github.com"
-
-Go to another website.
-
-
----
-
-Header
-
-<header>
-
-Usually contains
-
-Name
-
-Logo
-
-Introduction
-
-
-Like the cover page of a book.
-
-
----
-
-Image
-
-<img src="..." alt="Profile picture">
-
-Image has two important parts.
-
-src
-
-Where the picture lives.
-
-alt
-
-Text describing the picture.
-
-If the image fails,
-
-people still know what it was.
-
-Screen readers also read it.
-
-
----
-
-Heading
-
-<h1>
-
-The biggest heading.
-
-Imagine a newspaper.
-
-Huge title.
-
-WORLD NEWS
-
-There should usually be only one <h1> per page.
-
-
----
-
-Paragraph
-
-<p>
-
-Regular text.
-
-Like sentences in a story.
-
-
----
-
-Main
-
-<main>
-
-The main content.
-
-Everything important goes here.
-
-Search engines like this.
-
-Screen readers like this.
-
-
----
-
-Section
-
-<section>
-
-A chapter of the webpage.
-
-Example:
-
-About
-
-Projects
-
-Contact
-
-Each is its own section.
-
-
----
-
-ID
-
-id="projects"
-
-An ID is a unique name.
-
-Imagine students.
-
-John
-
-Mary
-
-Alex
-
-Each has one name.
-
-Same idea.
-
-
----
-
-Article
-
-<article>
-
-A complete piece of content.
-
-Each project card is an article.
-
-It could stand on its own.
-
-
----
-
-Div
-
-<div class="projects">
-
-A box.
-
-Nothing more.
-
-It groups things together.
-
-
----
-
-Class
-
-class="card"
-
-A class is like giving stickers.
-
-Imagine
-
-🍎 Apple
-
-🍎 Apple
-
-🍎 Apple
-
-Every fruit with an 🍎 sticker gets the same style.
-
-
----
-
-Flexbox
-
+``` css
 display:flex;
+```
 
-Normally
+Creates flexible layouts.
 
-A
+## Gap
 
-B
-
-C
-
-Flexbox lets them sit beside each other.
-
-A   B   C
-
-
----
-
-Gap
-
+``` css
 gap:20px;
+```
 
-Adds space between Flexbox items.
+Adds spacing between flex or grid items.
 
-Instead of touching,
+## Border Radius
 
-A B C
+Rounds corners.
 
-becomes
+## Box Shadow
 
-A    B    C
+Adds depth with shadows.
 
+## `<footer>`
 
----
+Contains footer information such as copyright and contact links.
 
-Border Radius
+## `target="_blank"`
 
-border-radius:10px;
+Opens a link in a new browser tab.
 
-Without
+## Website Rendering Flow
 
-□□□□
-
-With
-
-◻️
-
-Rounded corners.
-
-
----
-
-Box Shadow
-
-box-shadow:...
-
-Creates a shadow.
-
-Like lifting paper off a table.
-
-
----
-
-Footer
-
-<footer>
-
-The bottom of the page.
-
-Usually contains
-
-Copyright
-
-Contact
-
-Links
-
-
-
----
-
-External Links
-
-target="_blank"
-
-Means
-
-> "Open in a new tab."
-
-
-
-The current page stays open.
-
-
----
-
-Website Flow
-
+``` text
 Browser opens webpage
-
 ↓
-
 Reads HTML
-
 ↓
-
 Reads CSS
-
 ↓
-
 Builds the page
-
 ↓
-
-Shows it to the user
-
+Displays the webpage
 ↓
+User interacts with the page
+```
 
-User clicks navigation
+# Beginner Analogy
 
-↓
+-   **HTML** provides the structure.
+-   **CSS** provides the appearance.
+-   **JavaScript** provides interactivity.
 
-Browser jumps to the section
-
-↓
-
-User clicks GitHub
-
-↓
-
-Opens GitHub in another tab
-
-Beginner Analogy
-
-Think of building a website like making a comic book:
-
-HTML is the story and the panels—it decides what is on the page.
-
-CSS is the coloring and decoration—it decides how everything looks.
-
-JavaScript (which you'll learn later) is the magic that makes things move and respond when you click them.
-
-
-As you continue learning, you'll see this same pattern in almost every website you build:
-
-1. Structure with HTML.
-
-
-2. Style with CSS.
-
-
-3. Interactivity with JavaScript.
-
-
-
-Once you're comfortable with these three layers, you'll be able to understand and create increasingly complex web applications.
+Modern websites combine all three technologies.
