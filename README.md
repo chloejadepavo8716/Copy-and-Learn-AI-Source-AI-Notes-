@@ -28,7 +28,7 @@ There are 10 on the list(a good order to complete them):
 
 <div>
   
-`Documentation`: 
+`Documentation`: https://github.com/chloejadepavo8716/Copy-and-Learn-AI-Source-AI-Notes-/blob/1d45753538880845e2692d64f81c3ba6a0f9feb6/personalportfoliodocumentation.md
 
 </div>
 
