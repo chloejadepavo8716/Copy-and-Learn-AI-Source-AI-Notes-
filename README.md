@@ -38,6 +38,6 @@ There are 10 on the list(a good order to complete them):
 
 `Sourcecode`: https://github.com/chloejadepavo8716/Copy-and-Learn-AI-Source-AI-Notes-/blob/main/digitalresume.html
 
-`Documentation`:
+`Documentation`: https://github.com/chloejadepavo8716/Copy-and-Learn-AI-Source-AI-Notes-/blob/main/digitalresume.md
 
 
