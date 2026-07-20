@@ -36,7 +36,7 @@ There are 10 on the list(a good order to complete them):
 
 `Preview`: https://chloejadepavo8716.github.io/Digital-Resume/
 
-`Sourcecode`:
+`Sourcecode`: https://github.com/chloejadepavo8716/Copy-and-Learn-AI-Source-AI-Notes-/blob/main/digitalresume.html
 
 `Documentation`:
 
